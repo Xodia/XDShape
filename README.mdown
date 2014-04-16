@@ -37,6 +37,8 @@ Be careful, set the property backgroundImage with the image you want.<br/>
 Also, give your UI's the same value as width and height to have a good radius. <br/>
 (E.g: <code>imageView.frame = CGRectMake(0, 0, 50, 50);</code );<br/>
 
+![alt tag](https://raw.github.com/Xodia/XDShape/master/iOS Simulator Screen shot Apr 15, 2014, 8.43.25 PM.png)
+
 Questions
 =======
 
