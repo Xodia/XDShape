@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA8FBEE18FE2DD200067F87 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA8FBED18FE2DD200067F87 /* default.png */; };
+		4CA8FBF418FE32A100067F87 /* UIButton_XDShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8FBF118FE32A100067F87 /* UIButton_XDShape.m */; };
+		4CA8FBF518FE32A100067F87 /* UIImageView_XDShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8FBF318FE32A100067F87 /* UIImageView_XDShape.m */; };
 		4CBB97C118FDDA7800B5F73F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBB97C018FDDA7800B5F73F /* Foundation.framework */; };
 		4CBB97C318FDDA7800B5F73F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBB97C218FDDA7800B5F73F /* CoreGraphics.framework */; };
 		4CBB97C518FDDA7800B5F73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBB97C418FDDA7800B5F73F /* UIKit.framework */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CA8FBED18FE2DD200067F87 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		4CA8FBF018FE32A100067F87 /* UIButton_XDShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton_XDShape.h; sourceTree = "<group>"; };
+		4CA8FBF118FE32A100067F87 /* UIButton_XDShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_XDShape.m; sourceTree = "<group>"; };
+		4CA8FBF218FE32A100067F87 /* UIImageView_XDShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageView_XDShape.h; sourceTree = "<group>"; };
+		4CA8FBF318FE32A100067F87 /* UIImageView_XDShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageView_XDShape.m; sourceTree = "<group>"; };
 		4CBB97BD18FDDA7800B5F73F /* XDTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBB97C018FDDA7800B5F73F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CBB97C218FDDA7800B5F73F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +63,7 @@
 		4CBB97EA18FDDA7800B5F73F /* XDTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XDTestTests-Info.plist"; sourceTree = "<group>"; };
 		4CBB97EC18FDDA7800B5F73F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CBB97EE18FDDA7800B5F73F /* XDTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDTestTests.m; sourceTree = "<group>"; };
+		4CBB97FA18FDDADB00B5F73F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CA8FBEF18FE32A100067F87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4CA8FBF018FE32A100067F87 /* UIButton_XDShape.h */,
+				4CA8FBF118FE32A100067F87 /* UIButton_XDShape.m */,
+				4CA8FBF218FE32A100067F87 /* UIImageView_XDShape.h */,
+				4CA8FBF318FE32A100067F87 /* UIImageView_XDShape.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4CBB97B418FDDA7800B5F73F = {
 			isa = PBXGroup;
 			children = (
+				4CA8FBEF18FE32A100067F87 /* Extension */,
 				4CBB97C618FDDA7800B5F73F /* XDTest */,
 				4CBB97E818FDDA7800B5F73F /* XDTestTests */,
 				4CBB97BF18FDDA7800B5F73F /* Frameworks */,
@@ -103,6 +124,7 @@
 		4CBB97BF18FDDA7800B5F73F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CBB97FA18FDDADB00B5F73F /* QuartzCore.framework */,
 				4CBB97C018FDDA7800B5F73F /* Foundation.framework */,
 				4CBB97C218FDDA7800B5F73F /* CoreGraphics.framework */,
 				4CBB97C418FDDA7800B5F73F /* UIKit.framework */,
@@ -121,6 +143,7 @@
 				4CBB97D818FDDA7800B5F73F /* SCViewController.h */,
 				4CBB97D918FDDA7800B5F73F /* SCViewController.m */,
 				4CBB97DB18FDDA7800B5F73F /* Images.xcassets */,
+				4CA8FBED18FE2DD200067F87 /* default.png */,
 				4CBB97C718FDDA7800B5F73F /* Supporting Files */,
 			);
 			path = XDTest;
@@ -236,6 +259,7 @@
 				4CBB97DC18FDDA7800B5F73F /* Images.xcassets in Resources */,
 				4CBB97D418FDDA7800B5F73F /* Main_iPhone.storyboard in Resources */,
 				4CBB97CB18FDDA7800B5F73F /* InfoPlist.strings in Resources */,
+				4CA8FBEE18FE2DD200067F87 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +280,9 @@
 			files = (
 				4CBB97D118FDDA7800B5F73F /* SCAppDelegate.m in Sources */,
 				4CBB97DA18FDDA7800B5F73F /* SCViewController.m in Sources */,
+				4CA8FBF518FE32A100067F87 /* UIImageView_XDShape.m in Sources */,
 				4CBB97CD18FDDA7800B5F73F /* main.m in Sources */,
+				4CA8FBF418FE32A100067F87 /* UIButton_XDShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +497,7 @@
 				4CBB97F418FDDA7800B5F73F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CBB97F518FDDA7800B5F73F /* Build configuration list for PBXNativeTarget "XDTestTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +506,7 @@
 				4CBB97F718FDDA7800B5F73F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
