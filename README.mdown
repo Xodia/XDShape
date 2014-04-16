@@ -4,3 +4,44 @@ XDShape
 UIButton - UIImageView extension to make rounded and squared image
 
 Simple way to make rounded image or button in iOS.
+
+Requirements
+=======
+
+  - iOS
+  - Xcode
+  
+  
+Examples
+=======
+
+<code>#import "UIImageView_XDShape.h"</code><br/>
+
+For example, you want to have a rounded shape image, you only have to do:<br/>
+<code>[yourImageView toRoundImageView];</code><br/>
+If you want to add a border to it, just call that method instead:<br/>
+<code>[yourImageView toRoundImageViewWithBorderSize: size color: aColor];<br/>
+</code>
+
+Same thing for squared image:<br/>
+<code>[yourImageView toSquareImageView];</code><br/>
+If you want to add a border to it, just call that method instead:<br/>
+<code>[yourImageView toSquareImageViewWithBorderSize: size color: aColor];<br/>
+</code>
+
+It's basically the same for the button: <br/>
+<code>#import "UIButton_XDShape.h"</code>
+<br/>
+<code>[yourButton toRoundImageView];</code><br/>
+Be careful, set the property backgroundImage with the image you want.<br/>
+Also, give your UI's the same value as width and height to have a good radius. <br/>
+(E.g: <code>imageView.frame = CGRectMake(0, 0, 50, 50);</code );<br/>
+
+Questions
+=======
+
+Contact me @Xod_CM on twitter or morgan.collino@gmail.com !
+
+Licence
+=======
+No license.
